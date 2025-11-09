@@ -1,13 +1,14 @@
 services:
   app: 
-    image: "yuniques/devops-for-programmers-project-74"
+    image: yuniques/devops-for-programmers-project-74:latest
     build:
       context: .
-      dockerfile: Dockerfile.production
+      dockerfile: Dockerfile
     ports: 
       - "8080:8080"
     volumes:
       - ./app:/app
+    command: make dev
 
   caddy:
     image: caddy:latest
