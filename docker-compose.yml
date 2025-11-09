@@ -1,0 +1,10 @@
+services:
+  app:
+    image: "yuniques/devops-for-programmers-project-74"
+    ports: 
+      - "8080:8080"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "./app:/app"

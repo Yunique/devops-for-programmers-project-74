@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+node_modules/
+.cache/
+.npm/
+build/
+dist/
+tmp/
+temp/
+.env
+*.sqlite
